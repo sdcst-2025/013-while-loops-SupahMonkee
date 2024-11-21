@@ -19,3 +19,18 @@ Enter number:4
 That is an even integer
 
 """
+import os
+
+os.system("cls")
+
+num = float(1)
+
+while (num/2) != round(num/2, 0):
+    num = float(input("Enter number: "))
+    if (num/2) != round(num/2, 0):
+        print("That is not an even integer")
+    else:
+        break
+print("That is an even integer")
+
+#done

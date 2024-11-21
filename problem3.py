@@ -13,3 +13,21 @@ after the number in the sequence is greater than 100:
 Example:
 1 1 2 3 5 ...
 """
+import os
+
+os.system("cls")
+
+num1 = int(0)
+num2 = int(0)
+fnum = int(1)
+
+while fnum < 100:
+    print(fnum)
+    num1 = num2
+    num2 = fnum
+    fnum = num1 + num2
+    if fnum > 100:
+        break
+print(fnum)
+
+#done

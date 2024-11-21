@@ -25,3 +25,11 @@ Example:
 10
 ...
 """
+
+x = 0
+
+while x < 20:
+    print(f"{x+2}")
+    x = x+2
+
+#done

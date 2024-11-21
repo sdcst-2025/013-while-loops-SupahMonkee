@@ -30,3 +30,28 @@ Enter password: 1234
 Access denied
 Too many failed attempts. Access denied.
 """
+
+import os
+
+os.system("cls")
+
+username = ""
+password = ""
+attempts = int(3)
+
+while username != "admin" and password != "12345" and attempts > 0:
+    os.system("cls")
+    print(f"You have {attempts} attempts remaining")
+    username = input("Enter username: ")
+    password = input("Enter password: ")
+    if username != "admin" and password != "12345" and attempts > 0:
+        print("Access denied")
+        attempts = attempts - 1
+    elif attempts < 1:
+        print("Too many failed attempts. Access denied.")
+        exit
+    else:
+        break
+print("Access granted")
+
+#done
