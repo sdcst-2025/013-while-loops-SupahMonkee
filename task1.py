@@ -25,7 +25,8 @@ Example:
 10
 ...
 """
-
+import os
+os.system("cls")
 x = 0
 
 while x < 20:

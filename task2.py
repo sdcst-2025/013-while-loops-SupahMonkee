@@ -29,11 +29,12 @@ Access granted
 
 
 """
-
+import os
 username = ""
 password = ""
 
 while username != "admin" and password != "12345":
+    os.system("cls")
     username = input("Enter username: ")
     password = input("Enter password: ")
     if username != "admin" and password != "12345":
